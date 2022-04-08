@@ -20,7 +20,6 @@ class Solution {
                 stones[j-1]=-1;
             }
         }
-      //  System.out.println(stones[i]);
         return stones[i];
     }
 }
