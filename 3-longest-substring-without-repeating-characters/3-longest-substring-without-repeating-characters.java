@@ -12,7 +12,9 @@ class Solution {
                 j++;
             }
             else{
-                while(i<j){
+                hs.remove(s.charAt(i));
+                i++;
+              /*  while(i<j){
                     if(s.charAt(i) != s.charAt(j)){
                          hs.remove(s.charAt(i));
                         i++;
@@ -22,7 +24,7 @@ class Solution {
                         i++;
                         break;
                     }
-                }
+                } */
             }
              
         }
