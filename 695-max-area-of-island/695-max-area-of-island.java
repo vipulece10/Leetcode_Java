@@ -3,12 +3,14 @@ class Solution {
     public int maxAreaOfIsland(int[][] grid) {
         int rows = grid.length;
         int cols = grid[0].length;
+        
        int max = Integer.MIN_VALUE;
         for(int i = 0;i<rows;i++){
             for(int j = 0;j<cols;j++){
                 if(grid[i][j] == 1){
                     count=0;
                     dfs(grid,rows,cols,i,j);
+                     
                     max = Math.max(max,count);
                 }
             }
