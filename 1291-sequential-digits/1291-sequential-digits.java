@@ -3,11 +3,11 @@ class Solution {
         
        // int [] numbers = new int[]{1,2,3,4,5,6,7,8,9};
         String str = "123456789";
-        System.out.println(str.length());
+       // System.out.println(str.length());
         int start = countDigits(low);
         int end = countDigits(high);
         List <Integer> res = new ArrayList<>();
-        System.out.println(start + " " + end);
+       // System.out.println(start + " " + end);
         
         while(start <= end){
             for(int i=0;i<str.length()-start+1;i++){
