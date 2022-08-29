@@ -12,7 +12,7 @@ class Solution {
         while(start <= end){
             for(int i=0;i<str.length()-start+1;i++){
                 String temp = str.substring(i,i+start);
-                System.out.println(temp);
+               // System.out.println(temp);
                 if(low <= Integer.valueOf(temp) 
                     && Integer.valueOf(temp) <= high){
                     res.add(Integer.valueOf(temp));
