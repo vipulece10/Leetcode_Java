@@ -3,7 +3,7 @@ class SORTracker {
     /**
     https://leetcode.com/problems/sequentially-ordinal-rank-tracker/discuss/1632156/Two-Heaps
     */
-     private PriorityQueue<Pair> minPq;
+    private PriorityQueue<Pair> minPq;
     private PriorityQueue<Pair> maxPq;
 
     public SORTracker() {
