@@ -15,20 +15,7 @@ class Solution {
             }
             
         }
-        
-        // if(i==j && Integer.parseInt(s.substring(i,j+1)) > k){
-        //         return -1;
-        //     }
-        list.add(s.substring(i,j));
-        
-//         Iterator itr = set.iterator();
-        
-//         while(itr.hasNext()){
-//             System.out.println(itr.next());
-       //  }
-        
-        //System.out.println(set);
-        
+        list.add(s.substring(i,j));        
        return list.size(); 
         
     }
