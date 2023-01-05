@@ -18,11 +18,6 @@ class Solution {
             }
             n = n / 10;
         }
-       // StringBuilder sb = new StringBuilder();
-       // sb.append(res);
-       // System.out.println("res" + res);
-       // String ans = sb.reverse().toString();
-       // System.out.println("ans" + ans);
         if(number == res)
             return false;
         return true;
