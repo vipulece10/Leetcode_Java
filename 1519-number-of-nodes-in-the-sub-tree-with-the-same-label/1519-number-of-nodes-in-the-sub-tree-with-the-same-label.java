@@ -1,5 +1,5 @@
 class Solution {
-    int [] ans;
+    //int [] ans;
     public int[] countSubTrees(int n, int[][] edges, String labels) {
         List<List<Integer>> graph = new ArrayList<>();
         for(int i = 0; i < n; i++){
