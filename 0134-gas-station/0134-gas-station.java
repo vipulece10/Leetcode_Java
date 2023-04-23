@@ -18,6 +18,7 @@ class Solution {
             while(currFuel < 0 && start < len)
             {
                 currFuel-=gas[start]-cost[start];
+                //currFuel=0;
                 start++;
             }
         }
