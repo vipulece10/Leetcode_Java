@@ -2,7 +2,7 @@ class Solution {
     class Pair{
         int count;
         int time;
-        Pair(int count,int time){
+      public Pair(int count,int time){
             this.count = count;
             this.time = time;
         }
