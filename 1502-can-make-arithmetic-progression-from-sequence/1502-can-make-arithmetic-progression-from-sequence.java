@@ -14,7 +14,7 @@ class Solution {
         if((max - min) % (n-1) != 0)
             return false;
         int cd = (max - min)/(n - 1);
-        System.out.println(min + " " + max + " " + cd);
+        //System.out.println(min + " " + max + " " + cd);
         
         for(int i = 0;i<arr.length;i++){
             if((arr[i] - min) % cd != 0)
