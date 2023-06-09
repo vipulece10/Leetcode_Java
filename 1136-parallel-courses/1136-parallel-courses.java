@@ -13,7 +13,7 @@ class Solution {
         
         Queue<Integer> q = new LinkedList<>();
         int studyCount = 0;
-        for(int i = 0;i<n+1;i++){
+        for(int i = 1;i<n+1;i++){
             if(indegree[i] == 0){
                 q.add(i);
             }
@@ -38,6 +38,6 @@ class Solution {
            step++; 
         }
         System.out.println(studyCount);
-        return studyCount == n+1 ? step : -1;
+        return studyCount == n ? step : -1;
     }
 }
