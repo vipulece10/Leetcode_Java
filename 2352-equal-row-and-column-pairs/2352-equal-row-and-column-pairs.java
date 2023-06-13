@@ -2,6 +2,7 @@ class Solution {
     public int equalPairs(int[][] grid) {
         int n =grid.length;
         Map<String,Integer> hm = new HashMap<>();
+        
         for(int[] row :grid ){
             String rowString = Arrays.toString(row);
             hm.put(rowString,hm.getOrDefault(rowString,0) + 1);
