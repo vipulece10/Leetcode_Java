@@ -17,7 +17,7 @@ class Solution {
         
         if(maxValue == Integer.MIN_VALUE && minValue == Integer.MAX_VALUE)
             return 0;
-        System.out.println(minValue + " " + maxValue);
+        //System.out.println(minValue + " " + maxValue);
         
         int startIndex =0;
         int endIndex = nums.length-1;
