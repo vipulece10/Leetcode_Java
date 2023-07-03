@@ -3,18 +3,18 @@ class Solution {
         List<String> res = new ArrayList<>();
         HashMap<String,List<Integer>> map = new HashMap<>();
         for(int i =0;i<keyName.length;i++){
-            if(map.containsKey(keyName[i])){
-                List<Integer> lst = map.get(keyName[i]);
-                lst.add(getTimeInMinutes(keyTime[i]));
-                map.put(keyName[i],lst);
-            }else{
-                 List<Integer> lst = new ArrayList<Integer>();
-                lst.add(getTimeInMinutes(keyTime[i]));
-                //int val = getTimeInMinutes(keyTime[i]);
-                map.put(keyName[i],lst);
-            }
-            // map.computeIfAbsent(keyName[i], g -> new ArrayList<>());
-            // map.get(keyName[i]).add(getTimeInMinutes(keyTime[i]));
+            // if(map.containsKey(keyName[i])){
+            //     List<Integer> lst = map.get(keyName[i]);
+            //     lst.add(getTimeInMinutes(keyTime[i]));
+            //     map.put(keyName[i],lst);
+            // }else{
+            //      List<Integer> lst = new ArrayList<Integer>();
+            //     lst.add(getTimeInMinutes(keyTime[i]));
+            //     //int val = getTimeInMinutes(keyTime[i]);
+            //     map.put(keyName[i],lst);
+            // }
+            map.computeIfAbsent(keyName[i], g -> new ArrayList<>());
+            map.get(keyName[i]).add(getTimeInMinutes(keyTime[i]));
         }
         System.out.println(map.size());
         for(String key : map.keySet()){
