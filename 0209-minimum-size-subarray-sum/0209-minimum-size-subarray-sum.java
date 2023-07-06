@@ -6,6 +6,7 @@ class Solution {
         int min= Integer.MAX_VALUE;
         if (nums == null || nums.length == 0)
         return 0;
+        //Approach1
         while(j<nums.length){
             sum+=nums[j];
             j++;
@@ -15,6 +16,7 @@ class Solution {
                 i++;
             }
         }
+        
         return min==Integer.MAX_VALUE ? 0 : min;    
     }
 }
