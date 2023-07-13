@@ -9,6 +9,6 @@ class Solution {
                 hm.put(nums[i],i);
             }
         }
-        return new int[]{0,0};
+        return new int[]{};
     }
 }
