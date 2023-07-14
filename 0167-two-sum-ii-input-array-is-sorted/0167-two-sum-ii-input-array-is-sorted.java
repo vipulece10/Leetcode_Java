@@ -15,7 +15,7 @@ class Solution {
             else
                 i++;
         }
-        return res;
+        return new int[]{};
         
     }
 }
