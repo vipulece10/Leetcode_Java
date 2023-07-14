@@ -20,5 +20,6 @@ class Solution {
           res[i] = lst.get(i);  
         }
         return res;
+        //return lst.toArray(new int[lst.size()]);
     }
 }
