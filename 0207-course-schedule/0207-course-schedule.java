@@ -35,8 +35,8 @@ class Solution {
                     q.add(it);
             }
         }
-        if (cnt == numCourses)
-            return true;
-        else return false;
+        return cnt == numCourses ? true : false; 
+        //     return true;
+        // else return false;
     }
 }
