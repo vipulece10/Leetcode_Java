@@ -20,7 +20,7 @@ class Solution {
             else{
                 StringBuilder decodedString = st_string.pop();
                  int count =st_num.pop();
-                 StringBuilder sb  = new StringBuilder();
+                // StringBuilder sb  = new StringBuilder();
                // System.out.println(currentString);
                  while(count > 0){
                     decodedString.append(currentString);
