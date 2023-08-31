@@ -55,8 +55,8 @@ class Solution {
         int maxLen = 0;
         String res ="";
         for(int i = 0;i< s.length();i++){
-            int evenPalindrome = expandFromCenter(i,i,s);
-            int oddPalindrome = expandFromCenter(i,i+1,s);
+            int oddPalindrome = expandFromCenter(i,i,s);
+            int evenPalindrome = expandFromCenter(i,i+1,s);
             int len =Math.max(evenPalindrome,oddPalindrome);
             if(len > maxLen){
                 maxLen = len;
