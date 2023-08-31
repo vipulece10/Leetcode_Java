@@ -24,10 +24,11 @@ class Solution {
          
             
         }
-        if(stack.isEmpty())
-            return true;
-        else
-            return false;
+//         if(stack.isEmpty())
+//             return true;
+//         else
+//             return false;
+        return stack.isEmpty() ? true : false;
        
         
     }
