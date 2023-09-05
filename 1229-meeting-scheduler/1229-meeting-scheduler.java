@@ -14,9 +14,10 @@ class Solution {
             int start = Math.max(slots1[i][0],slots2[j][0]);
             int end = Math.min(slots1[i][1],slots2[j][1]);
             if(start + duration <= end){
-                res.add(start);
-                res.add(start + duration);
-                return res;
+                // res.add(start);
+                // res.add(start + duration);
+                // return res;
+                return Arrays.asList(start, start + duration);
             }
             if(slots1[i][1] < slots2[j][1]){
                 i++;
