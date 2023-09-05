@@ -4,7 +4,7 @@ class Solution {
         slots1 = [[10,50],[60,120],[140,210]], 
         slots2 = [[0,15],[60,70]]
         */
-        List<Integer> res = new ArrayList<>();
+        //List<Integer> res = new ArrayList<>();
         Arrays.sort(slots1,(a,b)->a[0] - b[0]);
         Arrays.sort(slots2,(a,b)->a[0] - b[0]);
         
@@ -25,6 +25,6 @@ class Solution {
                 j++;
             }
         }
-        return res;
+        return new ArrayList<>();
     }
 }
