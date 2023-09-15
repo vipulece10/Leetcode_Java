@@ -3,10 +3,6 @@ class Solution {
         Set<Character> set = new HashSet<>();
         int count = 0;
         int i =0;
-        /*
-        //    abacaba   set [ac]     count = 2     ab,ac
-        
-        */
         while(i<s.length()){
            if (!set.add(s.charAt(i))){
                count++;
