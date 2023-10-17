@@ -5,16 +5,23 @@ class TimeMap {
     }
     
     public void set(String key, String value, int timestamp) {
-        if(map.containsKey(key)){
-            List<Pair<String,Integer>>lst = map.get(key);
-            lst.add(new Pair<String,Integer>(value,timestamp));
-            map.put(key,lst);
-        }
-        else{
-             List<Pair<String,Integer>>list = new ArrayList<>();
-            list.add(new Pair<String,Integer>(value,timestamp));
-            map.put(key,list);
-        }
+        // if(map.containsKey(key)){
+        //     // List<Pair<String,Integer>>lst = map.get(key);
+        //     // lst.add(new Pair<String,Integer>(value,timestamp));
+        //     // map.put(key,lst);
+        //     map.get(key).add()
+        // }
+        // else{
+        //     //  List<Pair<String,Integer>>list = new ArrayList<>();
+        //     // list.add(new Pair<String,Integer>(value,timestamp));
+        //     map.putIfAbsent(key,new ArrayList<>());
+        //     map.put(key,new ArrayList<>());
+        //    // map.put(key,list);
+        //    // map.put(key,list.add(new Pair<String,Integer>(value,timestamp)));
+        //     map.get(key).add(new Pair<String,Integer>(value,timestamp));
+        // }
+         map.putIfAbsent(key,new ArrayList<>());
+         map.get(key).add(new Pair<String,Integer>(value,timestamp));
         
     }
     
