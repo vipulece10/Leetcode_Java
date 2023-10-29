@@ -12,13 +12,18 @@ class Solution {
         if(root == null)
             return null;
         
+        // for(TreeNode node : nodes){
+        //     if(node.val == root.val)
+        //         return root;
+        // }
+        
+        TreeNode left = lowestCommonAncestor(root.left,nodes);
+        TreeNode right = lowestCommonAncestor(root.right,nodes);
+        
         for(TreeNode node : nodes){
             if(node.val == root.val)
                 return root;
         }
-        
-        TreeNode left = lowestCommonAncestor(root.left,nodes);
-        TreeNode right = lowestCommonAncestor(root.right,nodes);
         
         if(left == null && right == null){
             return null;
