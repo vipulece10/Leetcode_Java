@@ -28,7 +28,7 @@ class Solution {
     System.out.print(letter);
     for(int i=0;i<letter.length();i++) {
         dfs(digits,sb+letter.charAt(i),map,res,index+1);
-      //  sb.re(sb.length()-1);
+        //sb.deleteCharAt(sb.length()-1);
     }
 }
     
