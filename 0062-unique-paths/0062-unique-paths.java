@@ -9,7 +9,7 @@ class Solution {
         return paths(mat, 0, 0);
     }
     
-    int paths(int mat[][], int row, int col) {
+    public int paths(int mat[][], int row, int col) {
         if (row > mat.length - 1 || col > mat[0].length - 1) return 0;
 
         if (row == mat.length - 1 && col == mat[0].length - 1) return 1;
@@ -17,8 +17,11 @@ class Solution {
         if (cache[row][col] != -1) {
             return cache[row][col];
         }
-
-        return cache[row][col] = paths(mat, row + 1, col) + paths(mat, row, col + 1);
+        
+        int down = paths(mat, row + 1, col);
+        int right = paths(mat, row, col + 1);
+        cache[row][col] = down + right;
+        return cache[row][col];
     }
 
     
