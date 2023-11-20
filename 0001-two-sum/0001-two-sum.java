@@ -5,9 +5,10 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             if(hm.containsKey(target-nums[i])){
                 return (new int[]{hm.get(target-nums[i]),i});
-            }else{
-                hm.put(nums[i],i);
             }
+            //else{
+                hm.put(nums[i],i);
+           // }
         }
         return new int[]{};
     }
