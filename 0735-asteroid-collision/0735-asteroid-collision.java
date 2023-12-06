@@ -15,7 +15,7 @@ class Solution {
                 //case 1 top < asteroid
                 if(Math.abs(st.peek()) < Math.abs(asteroids[i])){
                     st.pop();
-                    continue;
+                   // continue;
                 }
                 
                 //case 2 top == asteroid
