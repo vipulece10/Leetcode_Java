@@ -13,22 +13,22 @@ class Solution {
         map.put('9',"wxyz");
        // ArrayList<String> res=new ArrayList<>();
       //  StringBuilder sb=new StringBuilder();
-        dfs(digits,"",map,res,0);
+        dfs(digits,new StringBuilder(),map,res,0);
         return res;
     }
     
-    public void dfs(String digits,String sb,Map<Character,String>map,List<String>res,int index){
+    public void dfs(String digits,StringBuilder sb,Map<Character,String>map,List<String>res,int index){
         System.out.print("  "+digits);
         
     if(index==digits.length()){
-        res.add(sb);
+        res.add(sb.toString());
         return;
     }
     String letter=map.get(digits.charAt(index));
     System.out.print(letter);
     for(int i=0;i<letter.length();i++) {
-        dfs(digits,sb+letter.charAt(i),map,res,index+1);
-        //sb.deleteCharAt(sb.length()-1);
+        dfs(digits,sb.append(letter.charAt(i)),map,res,index+1);
+        sb.deleteCharAt(sb.length()-1);
     }
 }
     
