@@ -1,3 +1,8 @@
+/*
+TC: O(M * M * N)
+SC: O(M * N)
+*/
+
 class Pair{
     int length;
     String Word;
