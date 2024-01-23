@@ -21,10 +21,10 @@ class Solution {
         }
         set.remove(beginWord);
         //Create a priority Queue of Pair and sort them in ascending order
-        PriorityQueue <Pair> pq = new PriorityQueue<>((a,b)->a.length - b.length);
-        pq.add(new Pair(0,beginWord));
-        // Queue<Pair> pq = new LinkedList<>();
-        // pq.add(new Pair(0,beginWord));
+        //PriorityQueue <Pair> pq = new PriorityQueue<>((a,b)->a.length - b.length);
+        //pq.add(new Pair(0,beginWord));
+         Queue<Pair> pq = new LinkedList<>();
+         pq.add(new Pair(0,beginWord));
 
         while(!pq.isEmpty()){
             Pair word_pq = pq.poll();
