@@ -11,7 +11,8 @@ class Solution {
            // degree = Math.max(degree,count.get(nums[i]));
             if(count.get(nums[i]) > degree){
                 degree = count.get(nums[i]);
-                result = Math.max(result,i-firstSeen.get(nums[i]) + 1);
+                //result = Math.max(result,i-firstSeen.get(nums[i]) + 1);
+                result = i-firstSeen.get(nums[i]) + 1;
             }else if(count.get(nums[i]) == degree){
                 result = Math.min(result,i - firstSeen.get(nums[i]) + 1);
             }
