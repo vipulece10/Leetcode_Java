@@ -1,5 +1,8 @@
 class Solution {
     public boolean checkValidString(String s) {
+        
+        //https://youtu.be/KuE_Cn3xhxI
+        
         Stack<Integer> open = new Stack<>();
         Stack<Integer> star = new Stack<>();
         
