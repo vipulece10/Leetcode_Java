@@ -1,4 +1,10 @@
 class Solution {
+    /*
+    https://leetcode.com/problems/find-k-th-smallest-pair-distance/discuss/109075/Java-solution-Binary-Search
+    https://youtu.be/BZpF_o60STI
+    */
+    
+    
     public int smallestDistancePair(int[] nums, int k) {
         Arrays.sort(nums);
         int n = nums.length;
