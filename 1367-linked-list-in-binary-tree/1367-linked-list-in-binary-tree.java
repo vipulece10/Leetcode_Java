@@ -38,10 +38,6 @@ class Solution {
                 System.out.println(head.val + " " + root.val);
                 return true;
             }
-            // else{
-            //     System.out.println(head.val + " "+ root.val);
-            //     return false;
-            // }
         }
         
         boolean leftSubPath = isSubPath(head,root.left);
