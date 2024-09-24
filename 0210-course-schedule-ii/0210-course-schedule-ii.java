@@ -12,11 +12,11 @@ class Solution {
             adj.get(prereq[1]).add(prereq[0]);
         }
         
-        int k=0;
+       // int k=0;
         for(int i=0;i<numCourses;i++){
             for(Integer it :adj.get(i)){
                 indegree[it]++;  
-                k++;
+               // k++;
             }
         }
         
