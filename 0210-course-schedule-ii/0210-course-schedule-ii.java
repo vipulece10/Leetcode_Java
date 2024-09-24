@@ -44,6 +44,6 @@ class Solution {
         if(index == numCourses)
         return ans;
         else
-        return new int [0];     
+        return new int []{};     
     }
 }
